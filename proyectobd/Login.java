@@ -80,13 +80,13 @@ public class Login extends JFrame {
 
     private void abrirMenuPorRol(UsuarioSesion sesion) {
         switch (sesion.getRol()) {
-            case "administrador":
+            case "Administrador":
             new MenuAdmin(sesion).setVisible(true);
             break;
-            case "operador":
+            case "Operador":
            new MenuQuimico(sesion).setVisible(true);
                 break;
-            case "consulta":
+            case "Consulta":
                 new MenuConsulta(sesion).setVisible(true);
                 break;
             default:
